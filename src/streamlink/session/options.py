@@ -233,6 +233,10 @@ class StreamlinkOptions(Options):
           - ``float``
           - ``60.00``
           - See ``stream-timeout``
+        * - ffmpeg_dkey
+          - (str) Decryption key1
+        * - ffmpeg_dkey_2
+          - (str) Decryption key2
         * - ffmpeg-ffmpeg
           - ``str | None``
           - ``None``
@@ -329,6 +333,8 @@ class StreamlinkOptions(Options):
             "hls-segment-key-uri": None,
             "hls-audio-select": [],
             "dash-manifest-reload-attempts": 3,
+            "ffmpeg_dkey": None,
+            "ffmepg_dkey_2": None,
             "ffmpeg-ffmpeg": None,
             "ffmpeg-no-validation": False,
             "ffmpeg-verbose": False,
